@@ -1,52 +1,48 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Employee Interests Survey</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Employee</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
-<form action="http://google.co.in">
-<!-- If we remove this, every thing will move to the left of the page-->
-<div align="center">
-<!--Adds a heading to the form-->
-<h1>Employee Interests Survey form</h1>
-Enter your name:
-<!-- Input type text for small texts, specify size -->
-<input type="text" name="UserName" size=35 maxlength=35 value="">
-<!--Adds spaces - remove and see what happens -->
 
-Enter your department:
-<input type="text" name="Deptt" size=35 maxlength=35 value="">
-Tell us a little about yourself:
-<!-- For writing lot of text like descriptions with text wrapping,
-if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
-<textarea name="Comments" cols=30 rows=4></textarea>
-Do you exercise at home?
-<!-- Radio buttons help you choose one out of the many values -->
-<input type="radio" name="exe" value=1>Yes
-<input type="radio" name="exe" value=2>No
+    <form action="" class="formStyle">
+    <h1>Survey Form - Employee</h1>
+    Enter your name:
+    <input type="text" maxlength=40 value="">
+    <br>
+    Enter your department:
+    <input type="text" maxlength=40 value="">
+    <br>
+    Tell us a little about yourself:
+    <textarea name="Comments" cols=30 rows=3></textarea>
+    <br><br>
+    Do you exercise at home?
+    <input type="radio" name="exe" value=1>Yes
+    <input type="radio" name="exe" value=2>No
+    <br><br>
+    How do you like to read about your favorite topics?
+    <p>
+        <input type="checkbox" name="Books">Books
+        <input type="checkbox" name="Web">Online Resources
+        <input type="checkbox" name="Phone">Phone Apps
+        <input type="checkbox" name="Magazines">Magazines
+    </p>
+    What genre of movies do you like?
+    <select class="selection" name="Movie" ><option>
+        <option value=1 selected = "true">Comedy
+        <option value=2 >Romance
+        <option value=3 >Thriller
+        <option value=4 >Horror
+        <option value=5 >Biopic    
+    </select>
+    <br><br>
+    <input class="submitButton" type=submit value="Submit form">
 
-How do you like to read about your favorite topics?
-<p>
-<!--Checkbox lets you select multiple options -->
-<input type="checkbox" name="Books">Books
-<input type="checkbox" name="Web">Online resources
-<input type="checkbox" name="Phone">Phone apps
-<input type="checkbox" name="Magazines">Magazines
-</p>
-What genre of movies do you like?
-<!--Select box lets you choose one of the multiple dropdown options-->
-<select name="moviepref" ><option>
-<option value=1 selected = "true">comedy
-<option value=2 >romance
-<option value=3 >thriller
-<option value=4 >horror
-<option value=5 >biopic
-</select>
+    </form>
 
-<!--submits the information entered in the form by the user -->
-<input type=submit value="Submit form">
-</div>
-</form>
 </body>
 </html>
